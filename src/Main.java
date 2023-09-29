@@ -13,7 +13,7 @@ public class Main {
         String c = s.nextLine();
         double numberOfPeople = Double.parseDouble(c);
         // Calculates the total tip amount, total bill including tip, tip per person, and total per person (bill and tip together)
-        double totalTipAmount = bill * (1 + ((tipPercentage / 100)));
+        double totalTipAmount = bill * (tipPercentage / 100);
         double totalBill = bill + totalTipAmount;
         double tipPerPerson = totalTipAmount / numberOfPeople;
         double totalPerPerson = totalBill / numberOfPeople;
